@@ -3,139 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProApps — Useful apps for curious minds</title>
-  <meta name="description" content="A growing collection of AI-powered tools, everyday utilities, and learning apps for kids — all available on Google Play." />
+  <title>greybits — Playful games, calm tools &amp; bright kids apps</title>
+  <meta name="description" content="greybits is an independent studio making playful puzzle games, gentle kids apps, and calm everyday tools for Android. Free at heart, light on ads, made with care." />
+  <meta property="og:title" content="greybits — Screen time, well spent." />
+  <meta property="og:description" content="Playful puzzle games, gentle kids apps, and calm everyday tools for Android — made with care by a tiny studio." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237C3AED'/%3E%3Cstop offset='.5' stop-color='%23EC4899'/%3E%3Cstop offset='1' stop-color='%23F59E0B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='38' font-weight='bold' fill='white' text-anchor='middle'%3Eg%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- ======================== NAV ======================== -->
   <header class="nav">
-    <div class="nav__inner">
-      <a class="nav__brand" href="#top">
-        <span class="nav__logo">◆</span>
-        <span>ProApps</span>
-      </a>
-      <nav class="nav__links">
-        <a href="#apps">Apps</a>
-        <a href="#about">About</a>
-        <a class="nav__cta" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Play Store</a>
-      </nav>
-    </div>
+    <a class="brand" href="#top" aria-label="greybits home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span class="brand-name">greybits</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#games">Games</a>
+      <a href="#kids">Kids</a>
+      <a href="#everyday">Everyday</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Google&nbsp;Play&nbsp;→</a>
   </header>
 
+  <!-- ======================== HERO ======================== -->
   <main id="top">
     <section class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="hero__content">
-        <span class="hero__eyebrow">Independent app studio</span>
-        <h1 class="hero__title">
-          Small apps.<br />
-          <span class="hero__title-accent">Big curiosity.</span>
-        </h1>
-        <p class="hero__lede">
-          I build thoughtful Android apps — from AI-powered tools that quietly save you time,
-          to everyday utilities that just work, to playful learning apps that help kids
-          fall in love with discovery. Each one starts with a simple question:
-          <em>could this be a little better, a little kinder, a little more delightful?</em>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">An independent app studio</p>
+        <h1>Screen time,<br /><span class="grad-text">well spent.</span></h1>
+        <p class="lede">
+          We craft playful puzzle games, gentle apps for kids, and calm little tools
+          that just work — each one free at heart, light on ads, and made with
+          far too much care for its size.
         </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">
-            Browse on Google Play
-            <span class="btn__arrow">→</span>
-          </a>
-          <a class="btn btn--ghost" href="#apps">See the categories</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#games">Browse the apps ↓</a>
+          <a class="btn btn-ghost" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Follow on Google Play</a>
         </div>
-        <div class="hero__meta">
-          <div><strong>3</strong><span>Categories</span></div>
-          <div><strong>Android</strong><span>Platform</span></div>
-          <div><strong>Always</strong><span>Evolving</span></div>
-        </div>
+        <ul class="hero-stats" aria-label="Quick facts">
+          <li><strong>12</strong><span>apps live</span></li>
+          <li><strong>3</strong><span>little worlds</span></li>
+          <li><strong>∞</strong><span>care per pixel</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-collage" aria-hidden="true">
+        <img class="float f1" src="assets/icons/viper.png"    alt="" width="112" height="112" />
+        <img class="float f2" src="assets/icons/inkbloom.png" alt="" width="88"  height="88" />
+        <img class="float f3" src="assets/icons/bibo.png"     alt="" width="96"  height="96" />
+        <img class="float f4" src="assets/icons/calmjar.png"  alt="" width="120" height="120" />
+        <img class="float f5" src="assets/icons/looply.png"   alt="" width="84"  height="84" />
+        <img class="float f6" src="assets/icons/snackster.png" alt="" width="92" height="92" />
+        <img class="float f7" src="assets/icons/glimmer.png"  alt="" width="76"  height="76" />
       </div>
     </section>
 
-    <section class="apps" id="apps">
-      <div class="section__header">
-        <h2>What I build</h2>
-        <p>Three directions, one philosophy — make it useful, make it kind, make it fun.</p>
+    <!-- ======================== GAMES ======================== -->
+    <section class="shelf" id="games">
+      <div class="shelf-head reveal">
+        <span class="shelf-chip chip-games">Games &amp; Puzzles</span>
+        <h2>Bright little worlds to get <span class="grad-text-games">happily lost in</span></h2>
+        <p>Quick to pick up, hard to put down — no energy timers, no paywalled fun.</p>
       </div>
-
-      <div class="cards">
-        <article class="card card--ai">
-          <div class="card__icon" aria-hidden="true">✦</div>
-          <h3>AI-Powered Apps</h3>
-          <p>
-            Modern AI, packaged into focused tools that solve a single problem really well.
-            No bloat, no buzzwords — just intelligent assistants that earn their place on your home screen.
-          </p>
-          <ul class="card__tags">
-            <li>Smart</li>
-            <li>Fast</li>
-            <li>Practical</li>
-          </ul>
-        </article>
-
-        <article class="card card--general">
-          <div class="card__icon" aria-hidden="true">◎</div>
-          <h3>General Apps</h3>
-          <p>
-            Everyday utilities designed with care. The kind of small, dependable apps you reach for
-            without thinking — and never want to uninstall once you've tried them.
-          </p>
-          <ul class="card__tags">
-            <li>Simple</li>
-            <li>Reliable</li>
-            <li>Polished</li>
-          </ul>
-        </article>
-
-        <article class="card card--kids">
-          <div class="card__icon" aria-hidden="true">✿</div>
-          <h3>Kids Learning</h3>
-          <p>
-            Bright, friendly, ad-light learning apps built for little hands and curious minds.
-            Crafted to make discovery feel like play — not a worksheet in disguise.
-          </p>
-          <ul class="card__tags">
-            <li>Playful</li>
-            <li>Safe</li>
-            <li>Educational</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="about__inner">
-        <h2>Why this exists</h2>
-        <p>
-          The Play Store is full of apps. Most of them are fine. A few are brilliant. Many are
-          stuffed with ads and asking for permissions they don't need. I'm not trying to
-          out-ship the giants — I'm trying to make the kind of apps I'd want on my own phone,
-          and the kind I'd be happy to hand to a child.
-        </p>
-        <p>
-          Every app on my developer page is something I genuinely use, or something I built
-          because I wished it existed. If you find one helpful, that's the whole point.
-        </p>
-        <a class="btn btn--primary btn--lg" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">
-          Visit my Play Store page
-          <span class="btn__arrow">→</span>
+      <div class="grid">
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.viper" target="_blank" rel="noopener">
+          <img src="assets/icons/viper.png" alt="Viper app icon" width="72" height="72" />
+          <h3>Viper <span>Neon Snake Arcade</span></h3>
+          <p>Snake, reborn in neon — collect, dash, and outrun ghost rivals from around the world.</p>
+          <span class="card-link link-games">Get it on Google Play →</span>
         </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.looply" target="_blank" rel="noopener">
+          <img src="assets/icons/looply.png" alt="Looply app icon" width="72" height="72" />
+          <h3>Looply <span>Loop Draw Puzzle</span></h3>
+          <p>Draw one perfect loop through every clue. Simple rules, hundreds of head-scratchers.</p>
+          <span class="card-link link-games">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.glimmer" target="_blank" rel="noopener">
+          <img src="assets/icons/glimmer.png" alt="Glimmer app icon" width="72" height="72" />
+          <h3>Glimmer <span>Glitter Sort Puzzle</span></h3>
+          <p>Pour, swirl, and sort streams of real glitter physics. Oddly satisfying is an understatement.</p>
+          <span class="card-link link-games">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.inkbloom" target="_blank" rel="noopener">
+          <img src="assets/icons/inkbloom.png" alt="Inkbloom app icon" width="72" height="72" />
+          <h3>Inkbloom <span>Mandala Puzzle</span></h3>
+          <p>Piece blooming mandalas back together, petal by petal — a puzzle that doubles as a deep breath.</p>
+          <span class="card-link link-games">Get it on Google Play →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================== KIDS ======================== -->
+    <section class="shelf" id="kids">
+      <div class="shelf-head reveal">
+        <span class="shelf-chip chip-kids">Kids Corner</span>
+        <h2>Made for little hands, <span class="grad-text-kids">built with big care</span></h2>
+        <p>Bright, kind, and pressure-free — no scores to fail, no tricks, no noise.</p>
+      </div>
+      <div class="grid">
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.bibo.speechtherapy" target="_blank" rel="noopener">
+          <img src="assets/icons/bibo.png" alt="Bibo app icon" width="72" height="72" />
+          <h3>Bibo <span>Speech Therapy</span></h3>
+          <p>Gentle speech play for kids — practice sounds with a friendly buddy. No pressure, no scores.</p>
+          <span class="card-link link-kids">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.snackster" target="_blank" rel="noopener">
+          <img src="assets/icons/snackster.png" alt="Snackster app icon" width="72" height="72" />
+          <h3>Snackster <span>Kids Cooking App</span></h3>
+          <p>Little chefs, real snacks — step-by-step kitchen confidence for ages 8–12, with Rocco cheering along.</p>
+          <span class="card-link link-kids">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.sprout" target="_blank" rel="noopener">
+          <img src="assets/icons/sprout.png" alt="Sprout app icon" width="72" height="72" />
+          <h3>Sprout <span>ADHD Kids Routines</span></h3>
+          <p>Turns mornings, homework, and bedtime into small wins — a routine helper that roots for your kid.</p>
+          <span class="card-link link-kids">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.lingotots" target="_blank" rel="noopener">
+          <img src="assets/icons/lingotots.png" alt="LingoTots app icon" width="72" height="72" />
+          <h3>LingoTots <span>Kids Languages</span></h3>
+          <p>First words in seven languages, learned the only way little ones really learn — by playing.</p>
+          <span class="card-link link-kids">Get it on Google Play →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================== EVERYDAY ======================== -->
+    <section class="shelf" id="everyday">
+      <div class="shelf-head reveal">
+        <span class="shelf-chip chip-calm">Everyday &amp; Calm</span>
+        <h2>Small tools that <span class="grad-text-calm">smooth out the day</span></h2>
+        <p>No accounts, no sign-ups, mostly offline — they open, they help, they get out of the way.</p>
+      </div>
+      <div class="grid">
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.calmjar" target="_blank" rel="noopener">
+          <img src="assets/icons/calmjar.png" alt="Calm Jar app icon" width="72" height="72" />
+          <h3>Calm Jar <span>Relax &amp; Unwind</span></h3>
+          <p>Shake it, then watch the glitter settle — a pocket-sized moment of calm for busy minds.</p>
+          <span class="card-link link-calm">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.grocerybuddy" target="_blank" rel="noopener">
+          <img src="assets/icons/grocerybuddy.png" alt="Grocery Buddy app icon" width="72" height="72" />
+          <h3>Grocery Buddy <span>Shopping List</span></h3>
+          <p>The list that sorts itself, aisle by aisle — fully offline, so it works in every basement supermarket.</p>
+          <span class="card-link link-calm">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.tinybites" target="_blank" rel="noopener">
+          <img src="assets/icons/tinybites.png" alt="TinyBites app icon" width="72" height="72" />
+          <h3>TinyBites <span>Baby Food Recipes</span></h3>
+          <p>From first tastes to happy plates — stage-by-stage baby food recipes and feeding ideas for new parents.</p>
+          <span class="card-link link-calm">Get it on Google Play →</span>
+        </a>
+        <a class="card reveal" href="https://play.google.com/store/apps/details?id=com.proapps.brim" target="_blank" rel="noopener">
+          <img src="assets/icons/brim.png" alt="Brim app icon" width="72" height="72" />
+          <h3>Brim <span>Water &amp; Electrolytes</span></h3>
+          <p>Stay topped up without thinking about it — hydration and electrolytes, beautifully simple.</p>
+          <span class="card-link link-calm">Get it on Google Play →</span>
+        </a>
+        <div class="card card-teaser reveal" aria-label="More apps coming soon">
+          <span class="teaser-spark" aria-hidden="true">✦</span>
+          <h3>Always cooking <span>Coming soon</span></h3>
+          <p>The next app is already in the oven. Follow us on Google Play and be first in line when it drops.</p>
+          <a class="card-link link-teaser" href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Follow the studio →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== ABOUT ======================== -->
+    <section class="about" id="about">
+      <div class="shelf-head reveal">
+        <span class="shelf-chip chip-about">The greybits way</span>
+        <h2>Small studio. <span class="grad-text">Strong opinions.</span></h2>
+      </div>
+      <div class="values reveal">
+        <div class="value">
+          <span class="value-icon" aria-hidden="true">💛</span>
+          <h3>Free at heart</h3>
+          <p>Every app is free to use start to finish. Extras are optional treats — never keys to the fun.</p>
+        </div>
+        <div class="value">
+          <span class="value-icon" aria-hidden="true">🪶</span>
+          <h3>Light by design</h3>
+          <p>No accounts, no sign-ups, no nagging. Most apps run fully offline and start in a blink.</p>
+        </div>
+        <div class="value">
+          <span class="value-icon" aria-hidden="true">🧸</span>
+          <h3>Kind to kids</h3>
+          <p>Children's apps stay gentle: no pressure, no scores to fail, and nothing designed to hook.</p>
+        </div>
+        <div class="value">
+          <span class="value-icon" aria-hidden="true">🔍</span>
+          <h3>Detail-obsessed</h3>
+          <p>Every screen is tuned by hand, from tiny phones to big tablets — because small apps deserve big polish.</p>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- ======================== FOOTER ======================== -->
   <footer class="footer">
-    <div class="footer__inner">
-      <p>© <span id="year"></span> ProApps. Made with care.</p>
-      <a href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Google Play →</a>
+    <div class="footer-inner">
+      <div>
+        <p class="brand"><span class="brand-mark" aria-hidden="true">✦</span> <span class="brand-name">greybits</span></p>
+        <p class="footer-tag">Playful games, calm tools &amp; bright kids apps for Android.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://play.google.com/store/apps/dev?id=8067309061059365942" target="_blank" rel="noopener">Google Play</a>
+        <a href="mailto:greysonmiller67@gmail.com">greysonmiller67@gmail.com</a>
+      </div>
     </div>
+    <p class="footer-copy">© 2026 greybits. Made with care, one app at a time.</p>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Fade-in on scroll (content stays visible if JS is unavailable)
+    document.body.classList.add('js');
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
 </body>
 </html>
