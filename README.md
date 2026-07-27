@@ -1,19 +1,24 @@
-# ProApps Website
+# greybits studio website
 
-Single-page site for my Google Play developer page: https://play.google.com/store/apps/dev?id=8067309061059365942
+Static one-page site for the greybits studio — no build step, no dependencies beyond Google Fonts.
 
-## Files
-- `index.html` — page markup
-- `styles.css` — styling
+## Contents
+
+- `index.html` — the whole site (hero, Games & Puzzles, Kids Corner, Everyday & Calm, About, footer)
+- `styles.css` — all styling (Fraunces + Inter, candy-gradient light theme, responsive, reduced-motion safe)
+- `assets/icons/` — the 12 live app icons, resized to 256px for the web
 
 ## Deploy to GitHub Pages
-1. Push this folder to a GitHub repo.
-2. Repo **Settings → Pages → Build from branch** → pick `main` / root.
-3. Your site will be live at `https://<username>.github.io/<repo>/`.
 
-To use it as your user/organization site, name the repo `<username>.github.io` and it'll be served at `https://<username>.github.io/`.
+The site is a drop-in replacement for https://greysonmiller67-lang.github.io/:
 
-## Edit
-- Update the intro copy in `index.html` (look for `hero__lede` and `about` sections).
-- Tweak colors in `styles.css` under `:root` (the `--accent`, `--accent-2`, etc. variables).
-- Add more app categories by duplicating a `.card` block in `index.html`.
+1. Copy `index.html`, `styles.css`, and the `assets/` folder into the root of the `greysonmiller67-lang.github.io` repository (replacing the old `index.html`).
+2. Commit and push — GitHub Pages redeploys automatically in a minute or two.
+
+To preview locally, just open `index.html` in a browser.
+
+## Updating later
+
+- **New app goes live:** drop its 256px icon into `assets/icons/`, copy one `<a class="card">` block in the matching section of `index.html`, and edit the name / tagline / Play link. Bump the "12 apps live" stat in the hero.
+- All Play links point at the real store pages; the "Follow the studio" teaser and nav/footer buttons point at the developer page (`dev?id=8067309061059365942`).
+- Contact email in the footer: `greysonmiller67@gmail.com`.
